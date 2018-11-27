@@ -1,0 +1,154 @@
+:root {
+    --dark-blue: #2b6165;
+}
+
+
+.card-header.dark-blue-bg {
+    background-color: var(--blue-green);
+    color: white;
+}
+
+<!--********************************Contacts menu style********************************-->
+    body {
+        background-color: #FFFFFF;
+    }
+
+    ul.contacts_list {
+         /* position: absolute;
+      top: 32%;
+            left: 50%;
+        bottom: 10px;
+        left: 50%;*/
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+    }
+
+    ul.contacts_list li {
+        list-style: none;
+
+        /*TODO FIX MARGIN*/
+
+    }
+
+    /*ul.contacts_list li .fa { used for fa icons
+            font-size: 40px;
+            color: #9E9E9E;
+            line-height: 80px;
+            transition: .5s;
+        } */
+
+    ul.contacts_list li a {
+        position: relative;
+        display: block;
+        width: 80px;
+        height: 80px;
+        background-color: #75b095;
+        text-align: center;
+        transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
+        transition: .5s;
+        box-shadow: -15px 15px 15px rgb(0, 0, 0, 0.5);
+    }
+
+    ul.contacts_list li a::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+        background: #75b095;
+        filter: brightness(90%);
+        transition: .5s;
+        transform: rotate(0deg) skewY(-45deg);
+    }
+
+    ul.contacts_list li a::after {
+        content: "";
+        position: absolute;
+        top: 80px;
+        left: -11px;
+        height: 20px;
+        width: 100%;
+        background: #75b095;
+        filter: brightness(110%);
+        transition: .5s;
+        transform: rotate(0deg) skewX(-45deg);
+    }
+
+    ul.contacts_list li a:hover {
+        transform: perspective(100px) rotate(-30deg) skew(25deg) translate(5px, -5px);
+        box-shadow: -30px 30px 30px rgb(0, 0, 0, 0.5);
+    }
+
+    /*ul.contacts_list li:hover .fa { used for font awesome icons
+            color: #FFFFFF;
+        }  */
+
+    ul.contacts_list li:hover .social {
+        filter: invert(100%)
+    }
+
+    .social {
+        transition: .5s;
+        /*set start icon color here using css filter converter */
+        filter: invert(49%) sepia(26%) saturate(530%) hue-rotate(103deg) brightness(94%) contrast(93%);
+    }
+
+    .vk:hover a {
+        background: #4a76a8;
+    }
+
+    .vk:hover a:before {
+        background: #3f648f;
+        filter: brightness(80%);
+    }
+
+    .vk:hover a:after {
+        background: #4f7db3;
+        filter: brightness(105%);
+    }
+
+    .urfu {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .urfu:hover a {
+        background: #df2573;
+    }
+
+    .urfu:hover a:before {
+        background: #df2573;
+        filter: brightness(80%);
+    }
+
+    .urfu:hover a:after {
+        background: #df2573;
+        filter: brightness(105%);
+    }
+
+    .urfu:hover a {
+        background: #df2573;
+    }
+
+    .rtf:hover a {
+        background: #2967d6;
+    }
+
+    .rtf:hover a:before {
+        background: #2967d6;
+        filter: brightness(80%);
+    }
+
+    .rtf:hover a:after {
+        background: #2967d6;
+        filter: brightness(105%);
+    }
+
+    .item .inner-content {
+        display: table-cell;
+        vertical-align: middle;
+    }

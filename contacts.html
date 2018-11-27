@@ -1,0 +1,66 @@
+<h1 class="display-3 section-header">Контакты</h1>
+<div class="container" style="background:transparent;">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0" style="margin-bottom: 15px;">
+                <h5 class="card-header font-weight-bold dark-blue-bg border-0">Местоположение</h5>
+                <div class="card-body stats">
+
+                    <div class="map" style="padding: 0px; width: 100%; height: 353px;">
+                        <iframe width="100%" height="353px" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%B8%D1%80%D0%B8%D1%82%20%D1%80%D1%82%D1%84&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+                <!--<div class="card-footer">
+                    <small class="text-muted">Статистика минимальных и средних баллов по годам</small>
+                </div>-->
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0" style="margin-bottom: 15px;">
+                <h5 class="card-header font-weight-bold dark-blue-bg  border-0">Обратная связь</h5>
+                <div class="card-body stats">
+                    <form class="form-horizontal" style="padding:10px;" method="POST" action="https://formspree.io/v.a.shaternikov@gmail.com">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Имя" name="Имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Почта" name="Почта">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="Статус">
+                                <option selected>Кто вы?</option>
+                                <option>Абитуриент</option>
+                                <option>Студент</option>
+                                <option>Родитель</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Сообщение" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <!--<div class="card-footer">
+                    <small class="text-muted">Статистика бюджетных и контрактных мест по годам</small>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- TODO 3rd card here but change md-6 to md-4
+<div class="col-md-4">
+            <div class="card border-0" style="margin-bottom: 15px;">
+                <h5 class="card-header font-weight-bold dark-blue-bg  border-0">Бюджетные места</h5>
+                <div class="card-body stats">
+                  
+                    <div id="vacant_chart"></div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Статистика бюджетных и контрактных мест по годам</small>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>

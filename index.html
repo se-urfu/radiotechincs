@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="parallax.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="timeline.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="intro.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="statistics.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="contacts.css" rel="stylesheet" type="text/css">
+    <!--- TODO some style from here belongs to admission campaign - SPLIT -->
+    <style>
+        :root {
+            /*--blue-green: #286763; statistics*/
+            --yellow: #b39c47; /*admission campaign*/
+            /*best? --yellow: #c2a434; */
+            /*--yellow: #cbb46d;*/
+            
+        }
+        
+        body {
+            /*min-height:6000px;*/
+        }
+        /*.card-deck .cw-30 {
+            flex: 1 0 30%;
+            max-width: 30%;
+        }
+        
+        .cw-30 {
+            background-color: transparent;
+            max-width: 30%;
+        }
+        
+        
+        .card-deck .cw-70 {
+            flex: 1 0 70%;
+            max-width: 70%;
+        } */
+        
+        .card-header.yellow-bg{
+            background-color: var(--yellow);
+            color:white;
+        }
+        
+        .display-3.section-header {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;     
+        }
+        
+      
+
+</style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <!--charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/score-chart.js"></script>
+    <script type="text/javascript" src="js/vacant-chart.js"></script>
+
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/what_is_radio.js"></script>
+    <script type="text/javascript" src="js/statistics.js"></script>
+
+</head>
+
+<body>
+
+    <!--<header class="black-circle parallax" style="min-height: 979px;">
+	<div class="inner">
+		<div class="ct-page_title">
+			<div class="inner">
+				<h1>
+					<span><img src="images/logo.png"/></span>
+				</h1>
+				<h2>
+					A major trend in web design is parallax scrolling, which involves the background moving at a slower rate to the foreground, creating a 3D effect as you scroll down the page.
+				</h2>
+			</div>
+		</div>
+	</div>
+</header> -->
+    <!-- class="ct-u-paddingBoth120" was inside section for padding-->
+    <section id="intro" style="background:transparent; min-height: 300px;"></section>
+    
+    <section id="what_is_radio" style="background:transparent; min-height: 979px;"></section>
+
+    <section id="statistics" style="background:transparent; min-height:800px;"></section>
+
+    <section id="admission_campaign" style="background:transparent; min-height: 979px;"></section>
+    
+    <section id="graduates" style="background:transparent; min-height: 990px;"></section>
+
+    <section id="contacts" style="background:transparent; min-height: 800px;">
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#intro").load("intro.html");
+            $("#what_is_radio").load("what_is_radio.html");
+            $("#statistics").load("statistics.html");
+            $("#admission_campaign").load("admission_campaign.html");
+            $("#graduates").load("graduates.html");
+            $("#contacts").load("contacts.html");
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#intro').parallax({
+                imageSrc: 'img/intro.png'
+            });
+            $('#what_is_radio').parallax({
+                imageSrc: 'img/what_is_radio.png'
+            });
+            $('#statistics').parallax({
+                imageSrc: 'img/statistics.png'
+            });
+            $('#admission_campaign').parallax({
+                imageSrc: 'img/admission_campaign.png'
+            });
+             $('#graduates').parallax({
+                imageSrc: 'img/graduates.png'
+            });
+            $('#contacts').parallax({
+                imageSrc: 'img/contacts.png'
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

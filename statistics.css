@@ -1,0 +1,22 @@
+:root {
+    --blue-green: #286763;
+}
+
+.card-header.blue-green-bg {
+    background-color: var(--blue-green);
+    color: white;
+}
+
+.card-body.stats {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
