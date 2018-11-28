@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="timeline.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="intro.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="statistics.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="opportunities.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="contacts.css" rel="stylesheet" type="text/css">
     <!--- TODO some style from here belongs to admission campaign - SPLIT -->
     <style>
@@ -70,6 +71,8 @@
     <script type="text/javascript" src="js/intro.js"></script>
     <script type="text/javascript" src="js/what_is_radio.js"></script>
     <script type="text/javascript" src="js/statistics.js"></script>
+     <script type="text/javascript" src="js/opportunities.js"></script>
+     <script type="text/javascript" src="js/contacts.js"></script>
 
 </head>
 
@@ -91,13 +94,15 @@
 </header> -->
     <!-- class="ct-u-paddingBoth120" was inside section for padding-->
     <section id="intro" style="background:transparent; min-height: 300px;"></section>
-    
+
     <section id="what_is_radio" style="background:transparent; min-height: 979px;"></section>
 
     <section id="statistics" style="background:transparent; min-height:800px;"></section>
 
     <section id="admission_campaign" style="background:transparent; min-height: 979px;"></section>
-    
+
+    <section id="opportunities" style="background:transparent; min-height: 979px;"></section>
+
     <section id="graduates" style="background:transparent; min-height: 990px;"></section>
 
     <section id="contacts" style="background:transparent; min-height: 979px;">
@@ -109,6 +114,7 @@
             $("#what_is_radio").load("what_is_radio.html");
             $("#statistics").load("statistics.html");
             $("#admission_campaign").load("admission_campaign.html");
+            $("#opportunities").load("opportunities.html");
             $("#graduates").load("graduates.html");
             $("#contacts").load("contacts.html");
         });
@@ -129,7 +135,10 @@
             $('#admission_campaign').parallax({
                 imageSrc: 'img/admission_campaign.png'
             });
-             $('#graduates').parallax({
+            $('#opportunities').parallax({
+                imageSrc: 'img/opportunities.png'
+            });
+            $('#graduates').parallax({
                 imageSrc: 'img/graduates.png'
             });
             $('#contacts').parallax({

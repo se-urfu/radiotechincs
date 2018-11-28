@@ -1,0 +1,16 @@
+:root {
+    --blue-gray: #405c78;
+}
+
+.card-header.blue-gray-bg {
+    background-color: var(--blue-gray);
+    color: white;
+}
+
+.img {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
