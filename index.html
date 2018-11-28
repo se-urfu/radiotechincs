@@ -96,6 +96,8 @@
     <section id="intro" style="background:transparent; min-height: 300px;"></section>
 
     <section id="what_is_radio" style="background:transparent; min-height: 979px;"></section>
+    
+    <section id="radio_in_urfu" style="background:transparent; min-height: 300px;"></section>
 
     <section id="statistics" style="background:transparent; min-height:800px;"></section>
 
@@ -112,6 +114,7 @@
         $(document).ready(function() {
             $("#intro").load("intro.html");
             $("#what_is_radio").load("what_is_radio.html");
+            $("#radio_in_urfu").load("radio_in_urfu.html");
             $("#statistics").load("statistics.html");
             $("#admission_campaign").load("admission_campaign.html");
             $("#opportunities").load("opportunities.html");
@@ -128,6 +131,9 @@
             });
             $('#what_is_radio').parallax({
                 imageSrc: 'img/what_is_radio.png'
+            });
+            $('#radio_in_urfu').parallax({
+                imageSrc: 'img/radio_in_urfu.png'
             });
             $('#statistics').parallax({
                 imageSrc: 'img/statistics.png'
