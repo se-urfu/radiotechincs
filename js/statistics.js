@@ -1,4 +1,4 @@
-function adaptMinHeight() {
+function adaptMinHeightStats() {
     var screenWidth = window.innerWidth;
     var minHeight = 810 + "px";
     if (screenWidth > 1000)
@@ -7,9 +7,9 @@ function adaptMinHeight() {
 }
 /*FOR ADAPTIVITY (change min-height) TODO ADD FOR EVERY SECTION*/
 $(document).ready(function () {
-    adaptMinHeight();
+    adaptMinHeightStats();
 });
 
 $(window).resize(function () {
-    adaptMinHeight();
+    adaptMinHeightStats();
 });
