@@ -1,0 +1,12 @@
+.img-rounded {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.quote-text {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+}
